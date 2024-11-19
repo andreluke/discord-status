@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useDiscord } from "#hooks";
 import { status } from "#styles";
-import { capitalizeFirstLetter, dateFormatter } from "#utils";
+import { capitalizeFirstLetter, dateFormatter, formatTimezone } from "#utils";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RootStackParamList } from "routes/StackRoutes";
 
@@ -67,7 +67,7 @@ export const Status: React.FC = () => {
         {data.page.name && <Text style={status.text}>{data.page.name}</Text>}
         {data.page.url && <Text style={status.text}>{data.page.url}</Text>}
         {data.page.time_zone && (
-          <Text style={status.text}>{data.page.time_zone}</Text>
+          <Text style={status.text}>{formatTimezone(data.page.time_zone)}</Text>
         )}
         {data.page.updated_at && (
           <Text style={status.text}>{dateFormatter(data.page.updated_at)}</Text>

@@ -138,7 +138,8 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     color: "#a0a0c0", // Cor sutil para mensagens sem incidentes
     textAlign: "center",
-    marginTop: 20,
+    marginTop: 10,
+    marginBottom: 10
   },
 
   // Estilo para a mensagem personalizada de sem manutenções
@@ -146,6 +147,7 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     color: "#a0a0c0", // Cor sutil para mensagens sem manutenção
     textAlign: "center",
-    marginTop: 20,
+    marginTop: 10,
+    marginBottom: 10
   },
 });
