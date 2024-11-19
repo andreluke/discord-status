@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "discord-service",
+    "name": "Discord Service",
     "slug": "discord-service",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,21 +8,29 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/discord-service.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.andreluke.discordservice"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/discord-service.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.andreluke.discordservice"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/discord-service.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "16c89196-56e7-49b9-bc5c-02156d87aab1"
+      }
+    },
+    "owner": "andreluke"
   }
 }

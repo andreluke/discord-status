@@ -22,8 +22,8 @@ export const Home: React.FC = () => {
       <DiscordLogo width={200} height={200} style={{ marginBottom: 30 }} />
 
       {/* Título e Botão */}
-      <Text style={home.title}>Bem-vindo ao App StatusDiscord!</Text>
-      <Text style={home.subtitle}>Conecte-se ao status de como está o discord e fique ligado!</Text>
+      <Text style={home.title}>Bem-vindo ao Discord Service!</Text>
+      <Text style={home.subtitle}>Conecte-se ao status de como está a estabilidade do discord e fique ligado!</Text>
 
       <TouchableOpacity
         style={home.button}
