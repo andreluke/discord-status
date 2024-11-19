@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
-import { Routes } from "#routes";
+import Routes from "./src/routes/StackRoutes";
 import React from "react";
 
 // Personalize o tema com base no DefaultTheme

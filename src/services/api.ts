@@ -1,4 +1,4 @@
-import { IDiscord } from "#types";
+import { IDiscord } from "../types/IDiscord";
 
 export const fetchData = async (url: string): Promise<IDiscord> => {
     const response = await fetch(url);

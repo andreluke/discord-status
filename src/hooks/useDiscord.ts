@@ -1,5 +1,5 @@
-import { getDiscordStatus } from "#services";
-import { IDiscord } from "#types";
+import { getDiscordStatus } from "../services/api";
+import { IDiscord } from "../types/IDiscord";
 import { useCallback, useEffect, useState } from "react";
 
 export const useDiscord = () => {

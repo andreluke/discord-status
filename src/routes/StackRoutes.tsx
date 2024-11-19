@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Home, Status } from '#pages';
+import { Home } from '../pages/Home';
+import { Status } from '../pages/Status';
 
 export type RootStackParamList = {
     Home: undefined;

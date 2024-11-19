@@ -7,13 +7,11 @@ import {
   Animated,
   Easing,
 } from "react-native";
-import { useDiscord } from "#hooks";
-import { status } from "#styles";
-import { capitalizeFirstLetter, dateFormatter, formatTimezone } from "#utils";
-import { StackNavigationProp } from "@react-navigation/stack";
-import { RootStackParamList } from "routes/StackRoutes";
-
-type SplashScreenNavigationProp = StackNavigationProp<RootStackParamList, "Status">;
+import { useDiscord } from "../hooks/useDiscord";
+import { styles as status } from "../styles/status";
+import { dateFormatter } from "../utils/dateFormatter";
+import { capitalizeFirstLetter } from "../utils/capitalizeLetter";
+import { formatTimezone } from "../utils/formatTimezone";
 
 export const Status: React.FC = () => {
   const { loading, error, data } = useDiscord();
